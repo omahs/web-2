@@ -151,7 +151,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
     }
     if (
       isEthName === false &&
-      this.miscUtils.checksumEtheruemAddress(this.userName) === false
+      this.miscUtils.checksumEthereumAddress(this.userName) === false
     ) {
       this.pagesFacade.gotoPageRoute('notfound', PagesEnum.NOTFOUND);
       return;
